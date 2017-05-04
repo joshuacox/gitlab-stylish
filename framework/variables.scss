@@ -18,13 +18,13 @@ $white-light: black;
 $white-normal: #101010;
 $white-dark: #2a2a2a;
 
-$gray-lightest: #0d0d0d;
-$gray-light: #131313;
-$gray-lighter: #191919;
-$gray-normal: #232323;
+$gray-lightest: #0f000f;
+$gray-light: #130313;
+$gray-lighter: #190919;
+$gray-normal: #230323;
 $gray-dark: darken($gray-light, $darken-dark-factor);
-$gray-darker: #121212;
-$gray-darkest: #545454;
+$gray-darker: #120212;
+$gray-darkest: #540454;
 
 $green-900: #f6fcf8;
 $green-800: #e4f5eb;
@@ -271,7 +271,7 @@ $dropdown-input-color: $color3;
 $dropdown-input-fa-color: #c7c7c7;
 $dropdown-input-focus-border: $focus-border-color;
 $dropdown-input-focus-shadow: rgba($dropdown-input-focus-border, .4);
-$dropdown-loading-bg: rgba(#fff, .6);
+$dropdown-loading-bg: rgba($bgcolor, .6);
 $dropdown-chevron-size: 10px;
 $dropdown-toggle-active-border-color: darken($border-color, 14%);
 
@@ -315,9 +315,9 @@ $location-icon-color: #e7e9ed;
  */
 $notes-light-color: $gl-text-color-secondary;
 $notes-role-color: $gl-text-color-secondary;
-$note-disabled-comment-color: #b2b2b2;
-$note-targe3-outside: #fffff0;
-$note-targe3-inside: #ffffd3;
+$note-disabled-comment-color: $gray-light;
+$note-targe3-outside: $bgcolor2;
+$note-targe3-inside: $bgcolor2;
 $note-line2-border: $bgcolor2;
 
 

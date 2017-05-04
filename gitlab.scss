@@ -9,6 +9,8 @@ $linkcolor: #2222FF;
 $bgcolor: black;
 $bgcolor2: #440044;
 $bgcolor3: #661166;
+$bgcolor4: #115511;
+$bgcolor5: #111155;
 
 @charset "UTF-8";
 
@@ -16,9 +18,36 @@ $bgcolor3: #661166;
 
 @import "imports.scss";
 
-html, body{
-  color: $color2;
-  background: $bgcolor;
-}
+  html, body{
+    color: $color2;
+    background: $bgcolor;
+  }
+
+  .form-control, .search form {
+    color: $color2;
+    background: $bgcolor;
+  }
+
+  .select2-drop {
+    color: $color3;
+    background: $bgcolor2;
+  }
+  .select2-search {
+    color: $color2;
+    background: $bgcolor;
+  }
+  .panel {
+    color: $color3;
+    background: $bgcolor2;
+  }
+  code.key-fingerprint {
+    color: $color4;
+    background: $bgcolor4;
+  }
+  button, input, optgroup, select, textarea {
+    color: $color3;
+    background: $bgcolor3;
+  }
+
 
 }

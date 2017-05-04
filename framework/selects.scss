@@ -156,7 +156,7 @@
 
 .select2-search input {
   padding: 2px 25px 2px 5px;
-  background: $white-light image-url('select2.png');
+  background: $bgcolor;
   background-repeat: no-repeat;
   background-position: right 0 bottom 6px;
   border: 1px solid $input-border;
@@ -169,8 +169,7 @@
 }
 
 .select2-search input.select2-active {
-  background-color: $white-light;
-  background-image: image-url('select2-spinner.gif') !important;
+  background-color: $bgcolor;
   background-repeat: no-repeat;
   background-position: right 5px center !important;
   background-size: 16px 16px !important;
