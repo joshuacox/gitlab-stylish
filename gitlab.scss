@@ -1,9 +1,24 @@
 $white-light: black;
+$color: #44FF44;
+$color2: #33cc33;
+$color3: #22aa22;
+$color4: #FF33FF;
+$color5: #FFc122;
+$redcolor: #FF2211;
+$linkcolor: #2222FF;
+$bgcolor: black;
+$bgcolor2: #440044;
+$bgcolor3: #661166;
 
 @charset "UTF-8";
 
 @-moz-document url-prefix("https://gitlab"), url-prefix("http://gitlab") {
 
 @import "imports.scss";
+
+html, body{
+  color: $color2;
+  background: $bgcolor;
+}
 
 }
