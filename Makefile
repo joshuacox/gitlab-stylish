@@ -16,3 +16,6 @@ clip:
 
 test:
 	sass -c ${INPUT_SASS}
+
+node_modules:
+	npm install
