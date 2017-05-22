@@ -12,6 +12,7 @@ build:
 clean:
 	-@rm -f ${OUTPUT_CSS}
 	-@rm -f ${OUTPUT_CSS}.map
+	-@rm -f ${MIN_CSS}
 
 clip:
 	-@cat ${OUTPUT_CSS}|xclip -i  -selection clipboard

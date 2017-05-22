@@ -6,7 +6,7 @@ $color4: #FF33FF;
 $color5: #FFc122;
 $redcolor: #FF2211;
 $linkcolor: #2222FF;
-$bgcolor: #691169;
+$bgcolor: #391139;
 $bgcolor1: #220022;
 $bgcolor2: #440044;
 $bgcolor3: #661166;
@@ -231,6 +231,13 @@ $bgcolor5: #111155;
     color: $color4;
   }
 
+  .project-visibility-level-holder .radio .option-title,
+  .project-visibility-level-holder .radio .option-descr,
+  .right-sidebar.wiki-sidebar a,
+  .wiki-page-header .light, .wiki-page-header .description-block,
+  .help-block,
+  .comment-toolbar,
+  .nav-links li.active a .badge,
   .row-content-block,
   svg,
   .branch-commit,
@@ -376,6 +383,7 @@ $bgcolor5: #111155;
     line-height: 24px;
   }
 
+  .form-actions,
   .form-control::-moz-placeholder, .search form::-moz-placeholder {
     color: $color2;
     background-color: $bgcolor2;
@@ -402,6 +410,75 @@ $bgcolor5: #111155;
     margin-bottom: 0;
     border-top: 1px solid $bgcolor2;
     border-bottom: 1px solid $bgcolor2;
+  }
+
+  .right-sidebar {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    transition: width .3s;
+    background: $bgcolor2;
+    padding: 10px 20px;
+    z-index: 2;
+  }
+
+  .file-holder .file-title {
+    position: relative;
+    background-color: $bgcolor2;
+    border-bottom: 1px solid $bgcolor3;
+    margin: 0;
+    text-align: left;
+    padding: 10px 16px;
+    word-wrap: break-word;
+    border-radius: 3px 3px 0 0;
+  }
+
+  .select2-drop-mask,
+  .file-editor .ace_gutter-cell {
+    background-color: $bgcolor2;
+  }
+
+  .ace-tm .ace_gutter {
+    background-color: $bgcolor3;
+    color: $color2;
+  }
+
+  .ace-tm {
+    background-color: $bgcolor3;
+    color: $color2;
+  }
+
+  .select2-container .select2-choice, .select2-container.select2-drop-above .select2-choice {
+    background-color: $bgcolor2;
+    border-color: $bgcolor4;
+    color: $color2;
+    height: 35px;
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 3px;
+  }
+  .select2-choice > a:hover {
+    background-color: $bgcolor4;
+    border-color: $color4;
+    color: $color4;
+    height: 35px;
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 3px;
+  }
+
+  .form-control[disabled], .search form[disabled], .form-control[readonly], .search form[readonly], fieldset[disabled] .form-control, fieldset[disabled] .search form, .search fieldset[disabled] form {
+    background-color: $bgcolor3;
+    color: $color2;
+  }
+
+  .bs-callout-info {
+    background-color: $bgcolor4;
+    border-color: $color4;
+    color: $color4;
   }
 
 }
