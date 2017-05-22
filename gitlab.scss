@@ -6,12 +6,15 @@ $color4: #FF33FF;
 $color5: #FFc122;
 $redcolor: #FF2211;
 $linkcolor: #2222FF;
-$bgcolor: #391139;
-$bgcolor1: #220022;
-$bgcolor2: #440044;
-$bgcolor3: #661166;
+$bgcolor: #291129;
+$bgcolor1: #120012;
+$bgcolor2: #340034;
+$bgcolor3: #461146;
 $bgcolor4: #115511;
 $bgcolor5: #111155;
+
+$warning:   #fc9403;
+$bluecolor: #2c44C3;
 
 @charset "UTF-8";
 
@@ -20,6 +23,10 @@ $bgcolor5: #111155;
   a {
     color: $linkcolor;
     background: $bgcolor;
+  }
+
+  table {
+    background-color: transparent;
   }
 
   li {
@@ -60,21 +67,12 @@ $bgcolor5: #111155;
     border-bottom: 1px solid $bgcolor2;
   }
 
-
-  .form-control, .search form {
+  .select2-search, .form-control, .search form {
     color: $color2;
     background: $bgcolor;
   }
 
-  .select2-drop {
-    color: $color3;
-    background: $bgcolor2;
-  }
-  .select2-search {
-    color: $color2;
-    background: $bgcolor;
-  }
-  .panel {
+  .panel, .select2-drop {
     color: $color3;
     background: $bgcolor2;
   }
@@ -96,24 +94,13 @@ $bgcolor5: #111155;
     border-bottom: 1px solid $bgcolor2;
   }
 
-  .nav-links.sub-nav {
-    background-color: $bgcolor;
-  }
-
+  .nav-links.sub-nav,
   .nav-links.sub-nav .container-fluid {
     background-color: $bgcolor;
   }
 
   .nav-links {
     border-bottom: 1px solid $bgcolor2;
-  }
-
-  header .header-content .title {
-    color: $color2;
-  }
-
-  header .header-content .title .dropdown-toggle-caret {
-    color: $color2;
   }
 
   header.navbar-gitlab .container-fluid .nav > li > a:hover, header.navbar-gitlab .container-fluid .nav > li > a:focus, header.navbar-gitlab .container-fluid .nav > li > a:active {
@@ -126,38 +113,19 @@ $bgcolor5: #111155;
     background-color: $bgcolor;
   }
 
-  .branch-commit .commit-icon svg {
-    height: 14px;
-    width: 14px;
-    vertical-align: middle;
-    fill: $color3;
-  }
-
+  .branch-commit .commit-icon svg,
+  header.navbar-gitlab .container-fluid .nav > li > a svg,
   header.navbar-gitlab .container-fluid .nav > li > a:hover svg, header.navbar-gitlab .container-fluid .nav > li > a:focus svg, header.navbar-gitlab .container-fluid .nav > li > a:active svg {
     fill: $color3;
   }
 
-  header.navbar-gitlab .container-fluid .nav > li > a svg {
-    fill: $color3;
-  }
-
-  .nav-links li.active a {
-    color: $color3;
-  }
-
-  .nav-links li a {
-    color: $color3;
-  }
-
-  .search .location-badge {
-    color: $color3;
-    background-color: $bgcolor;
-  }
-
+  .nav-links li a,
+  .nav-links li.active a,
   .form-control::-moz-placeholder, .search form::-moz-placeholder {
     color: $color3;
   }
 
+  .search .location-badge,
   .dropdown-menu a, .dropdown-menu-nav a {
     color: $color3;
     background-color: $bgcolor3;
@@ -178,45 +146,17 @@ $bgcolor5: #111155;
     color: $color2;
     background-color: $bgcolor2;
     border-color: $bgcolor3;
-    padding: 3px 10px;
   }
 
   .project-repo-buttons .count-with-arrow .arrow::after, .group-buttons .count-with-arrow .arrow::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    top: 50%;
-    left: 1px;
-    margin-top: -9px;
-    border-width: 10px 7px 10px 0;
     border-right-color: $bgcolor3;
-    pointer-events: none;
   }
 
   .project-repo-buttons .count-with-arrow .count, .group-buttons .count-with-arrow .count {
     color: $color2;
     background-color: $bgcolor2;
     border-color: $bgcolor3;
-    display: inline-block;
     background: $bgcolor2;
-    border-radius: 2px;
-    border-width: 1px;
-    border-style: solid;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 13px;
-    padding: 6px 16px;
-    letter-spacing: .4px;
-    padding: 6px 14px;
-    text-align: center;
-    vertical-align: middle;
-    touch-action: manipulation;
-    background-image: none;
-    white-space: nowrap;
-    margin: 0 10px 0 4px;
   }
 
   .git-clone-holder .form-control, .git-clone-holder .search form, .search .git-clone-holder form {
@@ -231,38 +171,9 @@ $bgcolor5: #111155;
     color: $color4;
   }
 
-  .project-visibility-level-holder .radio .option-title,
-  .project-visibility-level-holder .radio .option-descr,
-  .right-sidebar.wiki-sidebar a,
-  .wiki-page-header .light, .wiki-page-header .description-block,
-  .help-block,
-  .comment-toolbar,
-  .nav-links li.active a .badge,
-  .row-content-block,
-  svg,
-  .branch-commit,
-  .branch-commit .commit-row-message,
-  .branch-commit .commit-icon svg,
-  .nothing-here-block,
-  .commit a, .commit button, .generic_commit_status a, .generic_commit_status button,
-  ul.content-list li,
-  ul.content-list li a,
-  .tree-holder .tree-time-ago,
-  .tree-holder .tree-commit .tree-commit-link,
-  .tree-holder .tree-item .tree-item-file-name i, .tree-holder .tree-item .tree-item-file-name a,
-  .btn-transparent,
-  .light, .description-block,
-  .breadcrumb.repo-breadcrumb a,
-  .project-last-commit .commit-row-message,
-  .project-stats .nav > li > a {
-    color: $color2;
-  }
-
   .project-last-commit {
     background-color: $bgcolor2;
     border: 1px solid $bgcolor3;
-    border-radius: 3px;
-    padding: 12px;
   }
 
   tr.tree-item:hover,
@@ -272,12 +183,6 @@ $bgcolor5: #111155;
   .tree-holder .tree-table tr {
     border-bottom: 1px solid $bgcolor;
     border-top: 1px solid $bgcolor;
-  }
-
-  table.table tr th, .file-holder table tr th, .wiki table tr th, .md table tr th, ul.notes .note .note-body .note-text table tr th {
-    background-color: $bgcolor2;
-    font-weight: normal;
-    border-bottom: none;
   }
 
   .commit-header,
@@ -300,45 +205,16 @@ $bgcolor5: #111155;
   .sub-header-block {
     background-color: $bgcolor2;
     border-bottom: 1px solid $bgcolor;
-    padding: 11px 0;
-    margin-bottom: 11px;
-  }
-
-  .tint-box {
-    background: $bgcolor2;
-    position: relative;
-    margin-bottomom: 10px;
-  }
-
-  #contributors .person .spark {
-    display: block;
-    background: $bgcolor2;
-    width: 100%;
   }
 
   .axis {
     fill: $color2;
-    font-size: 10px;
-  }
-
-  .graphs .graph-author-email {
-    float: right;
-    color: $color2;
   }
 
   .project-network .controls {
     color: $color2;
-    font-size: 14px;
-    padding: 5px;
     border-bottom: 1px solid $bgcolor;
     background: $bgcolor2;
-  }
-
-  .project-network .network-graph {
-    background: $bgcolor2;
-    height: 500px;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
 
   .input-group .input-group-addon {
@@ -346,41 +222,18 @@ $bgcolor5: #111155;
   }
 
   .input-group-addon {
-    padding: 6px 16px;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1;
-    text-align: center;
     color: $color4;
     background-color: $bgcolor4;
     border: 1px solid $bgcolor3;
-    border-radius: 3px;
   }
 
   .label-branch {
     color: $color4;
-    font-family: "Menlo", "Liberation Mono", "Consolas", "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
-    font-weight: bold;
-    overflow: hidden;
-    font-size: 90%;
-    margin: 0 3px;
-    word-break: break-all;
   }
 
   code {
-    padding: 2px 4px;
-    font-size: 90%;
     color: #c0341d;
     background-color: $bgcolor1;
-    border-radius: 3px;
-  }
-
-  .slead {
-    color: $color2;
-    font-size: 14px;
-    margin-bottom: 12px;
-    font-weight: normal;
-    line-height: 24px;
   }
 
   .form-actions,
@@ -392,59 +245,23 @@ $bgcolor5: #111155;
   .markdown-area {
     color: $color2;
     background-color: $bgcolor2;
-    border-radius: 0;
     border: 1px solid $bgcolor2;
-    min-height: 140px;
-    max-height: 500px;
-    padding: 5px;
-    box-shadow: none;
-    width: 100%;
   }
 
   .row-content-block {
-    margin-top: 0;
-    margin-bottom: -16px;
     color: $color2;
     background-color: $bgcolor2;
-    padding: 16px;
-    margin-bottom: 0;
     border-top: 1px solid $bgcolor2;
     border-bottom: 1px solid $bgcolor2;
   }
 
-  .right-sidebar {
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-    right: 0;
-    transition: width .3s;
-    background: $bgcolor2;
-    padding: 10px 20px;
-    z-index: 2;
-  }
-
   .file-holder .file-title {
-    position: relative;
     background-color: $bgcolor2;
     border-bottom: 1px solid $bgcolor3;
-    margin: 0;
-    text-align: left;
-    padding: 10px 16px;
-    word-wrap: break-word;
-    border-radius: 3px 3px 0 0;
   }
 
-  .select2-drop-mask,
-  .file-editor .ace_gutter-cell {
-    background-color: $bgcolor2;
-  }
-
+  .ace-tm,
   .ace-tm .ace_gutter {
-    background-color: $bgcolor3;
-    color: $color2;
-  }
-
-  .ace-tm {
     background-color: $bgcolor3;
     color: $color2;
   }
@@ -453,21 +270,11 @@ $bgcolor5: #111155;
     background-color: $bgcolor2;
     border-color: $bgcolor4;
     color: $color2;
-    height: 35px;
-    padding: 6px 10px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    border-radius: 3px;
   }
   .select2-choice > a:hover {
     background-color: $bgcolor4;
     border-color: $color4;
     color: $color4;
-    height: 35px;
-    padding: 6px 10px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    border-radius: 3px;
   }
 
   .form-control[disabled], .search form[disabled], .form-control[readonly], .search form[readonly], fieldset[disabled] .form-control, fieldset[disabled] .search form, .search fieldset[disabled] form {
@@ -475,10 +282,133 @@ $bgcolor5: #111155;
     color: $color2;
   }
 
-  .bs-callout-info {
+  .panel-default > .panel-heading,
+  .bs-callout,
+  .bs-callout-info,
+  .btn.btn-inverted.btn-success, .btn.btn-inverted.btn-new, .btn.btn-inverted.btn-create, .btn.btn-inverted.comment-btn, .btn.btn-inverted.btn-save {
     background-color: $bgcolor4;
     border-color: $color4;
     color: $color4;
+  }
+
+  .board-inner {
+    color: $color4;
+    background: $bgcolor4;
+    border-color: $color4;
+    border: 1px solid $color4;
+  }
+
+  .board-blank-state {
+    background-color: $bgcolor4;
+  }
+
+  .filtered-search-box .fa-filter {
+    background-color: $bgcolor4;
+    color: $color4;
+  }
+
+  .filtered-search-box {
+    border: 1px solid $bgcolor4;
+    background-color: $bgcolor4;
+  }
+
+  .file-title-flex-parent {
+    background-color: $bgcolor;
+    border-bottom: 1px solid $bgcolor3;
+  }
+
+  .blob-commit-info {
+    background: $bgcolor;
+    border: 1px solid $bgcolor4;
+  }
+
+  .light-well, .description-block {
+    background-color: $bgcolor3;
+    color: $color3;
+  }
+
+  .dropdown-toggle, .dropdown-menu-toggle {
+    color: $color2;
+    background-color: $bgcolor2;
+    border: 1px solid $bgcolor3;
+  }
+
+  .event-item .event-title, .event-item a, .event-item {
+    color: $color2;
+    border-bottom: 1px solid $bgcolor4;
+  }
+
+  .top-area, .wiki-page-header,
+  .form-control, .search form ,
+  ul.content-list > li {
+    border-bottom: 1px solid $bgcolor4;
+  }
+
+  .alert-warning, .broadcast-message, .broadcast-message-preview {
+    background-color: $warning;
+    border-color: $warning;
+    color: $bluecolor;
+    ul, li {
+      background-color: $warning;
+      color: $bluecolor;
+    }
+  }
+
+  .panel-default,
+  table.table tr td, .file-holder table tr td, .wiki table tr td,
+  .md table tr td, ul.notes .note .note-body .note-text table tr td,
+  .form-control, .search form  {
+    border: 1px solid $bgcolor4;
+  }
+
+  hr {
+    border-top: 1px solid $bgcolor4;
+  }
+
+  .form-actions {
+    background-color: $bgcolor2;
+    border-top: 1px solid $bgcolor4;
+  }
+
+  .file-editor .ace_gutter-cell,
+  .select2-drop-mask, .right-sidebar,
+  .dropdown-menu, .dropdown-menu-nav,
+  .table-striped > tbody > tr:nth-of-type(2n+1),
+  .project-network .network-graph, .tint-box,
+  table.table tr th, .file-holder table tr th, .wiki table tr th,
+  .md table tr th, ul.notes .note .note-body .note-text table tr th,
+  #contributors .person .spark {
+    background: $bgcolor2;
+  }
+
+  .search .search-input-wrap .search-icon, .search .search-input-wrap .clear-icon,
+  .search-icon, .search-holder .search-icon, .group-row .stats,
+  .dropdown-toggle .fa, .dropdown-menu-toggle .fa,
+  .dropdown-toggle-text.is-default,
+  header .header-content .title,
+  header .header-content .title .dropdown-toggle-caret,
+  .graphs .graph-author-email,
+  .projects-list a, legend,
+  .file-title-flex-parent a,
+  .project-visibility-level-holder .radio .option-title,
+  .project-visibility-level-holder .radio .option-descr,
+  .right-sidebar.wiki-sidebar a,
+  .wiki-page-header .light, .wiki-page-header .description-block,
+  .help-block, .comment-toolbar,
+  .nav-links li.active a .badge,
+  .row-content-block, svg, .slead,
+  .branch-commit, .branch-commit .commit-row-message, .branch-commit .commit-icon svg,
+  .nothing-here-block, .btn-transparent,
+  .commit a, .commit button, .generic_commit_status a, .generic_commit_status button,
+  ul.content-list li, ul.content-list li a,
+  .tree-holder .tree-time-ago,
+  .tree-holder .tree-commit .tree-commit-link,
+  .tree-holder .tree-item .tree-item-file-name i, .tree-holder .tree-item .tree-item-file-name a,
+  .light, .description-block,
+  .breadcrumb.repo-breadcrumb a,
+  .project-last-commit .commit-row-message,
+  .project-stats .nav > li > a {
+    color: $color2;
   }
 
 }
