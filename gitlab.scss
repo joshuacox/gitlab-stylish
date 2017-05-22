@@ -356,6 +356,19 @@ $bluecolor: #2c44C3;
     border-color: $bgcolor4;
   }
 
+  legend {
+    border-bottom: 1px solid $bgcolor4;
+  }
+
+  .nav-links li a:hover, .nav-links li a:active, .nav-links li a:focus {
+    border-bottom: 2px solid $bgcolor4;
+  }
+
+  header .global-dropdown-toggle:focus {
+    background-color: $bgcolor3;
+  }
+
+  header .global-dropdown-toggle:hover,
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     color: $color4;
     background: $bgcolor4;
@@ -371,6 +384,15 @@ $bluecolor: #2c44C3;
   .panel-footer {
     background-color: $bgcolor1;
     border-top: 1px solid $bgcolor4;
+  }
+
+  .dropdown-menu, .dropdown-menu-nav {
+    background-color: $bgcolor;
+    border: 1px solid $bgcolor4;
+  }
+
+  .dropdown-menu a:hover .badge, .dropdown-menu a:focus .badge, .dropdown-menu a.is-focused .badge, .dropdown-menu-nav a:hover .badge, .dropdown-menu-nav a:focus .badge, .dropdown-menu-nav a.is-focused .badge {
+    background-color: $bgcolor;
   }
 
   hr {
@@ -430,8 +452,6 @@ $bluecolor: #2c44C3;
     background: $bgcolor;
   }
 
-
-
   .label-branch,
   .navbar-inverse .navbar-text,
   .project-stats .nav > li > a:hover, .project-stats .nav > li > a:focus,
@@ -440,8 +460,14 @@ $bluecolor: #2c44C3;
     color: $color4;
   }
 
-  .nav-links li a,
-  .nav-links li.active a,
+  .nav-links li a {
+    color: $color3;
+  }
+
+  .nav-links li.active a {
+    color: $color3;
+  }
+
   .form-control::-moz-placeholder, .search form::-moz-placeholder {
     color: $color3;
   }
