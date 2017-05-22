@@ -113,16 +113,10 @@ $bluecolor: #2c44C3;
     background-color: $bgcolor;
   }
 
-  .branch-commit .commit-icon svg,
+  .axis, .branch-commit .commit-icon svg, .pika-prev, .pika-next,
   header.navbar-gitlab .container-fluid .nav > li > a svg,
   header.navbar-gitlab .container-fluid .nav > li > a:hover svg, header.navbar-gitlab .container-fluid .nav > li > a:focus svg, header.navbar-gitlab .container-fluid .nav > li > a:active svg {
     fill: $color3;
-  }
-
-  .nav-links li a,
-  .nav-links li.active a,
-  .form-control::-moz-placeholder, .search form::-moz-placeholder {
-    color: $color3;
   }
 
   .search .location-badge,
@@ -148,10 +142,6 @@ $bluecolor: #2c44C3;
     border-color: $bgcolor3;
   }
 
-  .project-repo-buttons .count-with-arrow .arrow::after, .group-buttons .count-with-arrow .arrow::after {
-    border-right-color: $bgcolor3;
-  }
-
   .project-repo-buttons .count-with-arrow .count, .group-buttons .count-with-arrow .count {
     color: $color2;
     background-color: $bgcolor2;
@@ -165,10 +155,6 @@ $bluecolor: #2c44C3;
     margin-left: -1px;
     cursor: auto;
     width: 101%;
-  }
-
-  .project-stats .nav > li > a:hover, .project-stats .nav > li > a:focus {
-    color: $color4;
   }
 
   .project-last-commit {
@@ -207,10 +193,6 @@ $bluecolor: #2c44C3;
     border-bottom: 1px solid $bgcolor;
   }
 
-  .axis {
-    fill: $color2;
-  }
-
   .project-network .controls {
     color: $color2;
     border-bottom: 1px solid $bgcolor;
@@ -225,10 +207,6 @@ $bluecolor: #2c44C3;
     color: $color4;
     background-color: $bgcolor4;
     border: 1px solid $bgcolor3;
-  }
-
-  .label-branch {
-    color: $color4;
   }
 
   code {
@@ -250,14 +228,14 @@ $bluecolor: #2c44C3;
 
   .row-content-block {
     color: $color2;
-    background-color: $bgcolor2;
-    border-top: 1px solid $bgcolor2;
-    border-bottom: 1px solid $bgcolor2;
+    background-color: $bgcolor;
+    border-top: 1px solid $bgcolor4;
+    border-bottom: 1px solid $bgcolor4;
   }
 
   .file-holder .file-title {
-    background-color: $bgcolor2;
-    border-bottom: 1px solid $bgcolor3;
+    background-color: $bgcolor;
+    border-bottom: 1px solid $bgcolor4;
   }
 
   .ace-tm,
@@ -289,6 +267,11 @@ $bluecolor: #2c44C3;
     background-color: $bgcolor4;
     border-color: $color4;
     color: $color4;
+    a, body, html, li, html {
+      background-color: $bgcolor4;
+      border-color: $color4;
+      color: $color4;
+    }
   }
 
   .board-inner {
@@ -296,10 +279,6 @@ $bluecolor: #2c44C3;
     background: $bgcolor4;
     border-color: $color4;
     border: 1px solid $color4;
-  }
-
-  .board-blank-state {
-    background-color: $bgcolor4;
   }
 
   .filtered-search-box .fa-filter {
@@ -333,15 +312,21 @@ $bluecolor: #2c44C3;
     border: 1px solid $bgcolor3;
   }
 
-  .event-item .event-title, .event-item a, .event-item {
+  .pika-single {
     color: $color2;
-    border-bottom: 1px solid $bgcolor4;
+    background: $bgcolor2;
+    border: 1px solid $bgcolor4;
+    border-bottom-color: $bgcolor4;
   }
 
-  .top-area, .wiki-page-header,
-  .form-control, .search form ,
-  ul.content-list > li {
-    border-bottom: 1px solid $bgcolor4;
+  .pika-label {
+    color: $color2;
+    background-color: $bgcolor2;
+  }
+
+  .pika-single.gitlab-theme th {
+    color: $color2;
+    border-top: 1px solid rgba(0,0,0,0.5);
   }
 
   .alert-warning, .broadcast-message, .broadcast-message-preview {
@@ -354,33 +339,123 @@ $bluecolor: #2c44C3;
     }
   }
 
-  .panel-default,
-  table.table tr td, .file-holder table tr td, .wiki table tr td,
-  .md table tr td, ul.notes .note .note-body .note-text table tr td,
-  .form-control, .search form  {
-    border: 1px solid $bgcolor4;
+  .form-actions {
+    background-color: $bgcolor;
+    border-top: 1px solid $bgcolor4;
+  }
+
+  .file-holder .file-content.logs ol {
+    border-left: 1px solid $bgcolor4;
+    background: $bgcolor;
+  }
+
+  .file-holder .file-content.logs ol li:hover {
+    color: $color3;
+    background: $bgcolor;
+    background-color: $bgcolor;
+    border-color: $bgcolor4;
+  }
+
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: $color4;
+    background: $bgcolor4;
+    background-color: $bgcolor4;
+    border-color: $color4;
+  }
+
+  .navbar-default {
+    background-color: $bgcolor;
+    border-color: $bgcolor4;
+  }
+
+  .panel-footer {
+    background-color: $bgcolor1;
+    border-top: 1px solid $bgcolor4;
   }
 
   hr {
     border-top: 1px solid $bgcolor4;
   }
 
-  .form-actions {
-    background-color: $bgcolor2;
-    border-top: 1px solid $bgcolor4;
+  .project-home-panel, .group-home-panel,
+  .projects-list > li,
+  .event-item,
+  .nav-block .controls,
+  .activities .nav-block,
+  .top-area, .wiki-page-header,
+  .form-control, .search form ,
+  ul.content-list > li {
+    border-bottom: 1px solid $bgcolor4;
   }
 
-  .file-editor .ace_gutter-cell,
-  .select2-drop-mask, .right-sidebar,
-  .dropdown-menu, .dropdown-menu-nav,
+  table.table tr td, .file-holder table tr td, .wiki table tr td,
+  .md table tr td, ul.notes .note .note-body .note-text table tr td,
+  .file-holder, .panel-default, .form-control, .search form  {
+    border: 1px solid $bgcolor4;
+  }
+
+  .project-repo-buttons .count-with-arrow .arrow::after, .group-buttons .count-with-arrow .arrow::after {
+    border-right-color: $bgcolor3;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form,
+  .select2-container-multi .select2-choices {
+    border-color: $bgcolor4;
+  }
+
+  .board-blank-state {
+    background-color: $bgcolor4;
+  }
+
+  .summary_bar .summary {
+    background: $bgcolor4;
+  }
+
+  .pika-single.gitlab-theme .pika-day {
+    background-color: $bgcolor3;
+  }
+
+  .well-list > li:hover:not(.ui-sort-disabled) {
+    background: $bgcolor3;
+  }
+
   .table-striped > tbody > tr:nth-of-type(2n+1),
-  .project-network .network-graph, .tint-box,
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form,
   table.table tr th, .file-holder table tr th, .wiki table tr th,
   .md table tr th, ul.notes .note .note-body .note-text table tr th,
+  .file-editor .ace_gutter-cell, .select2-drop-mask, .right-sidebar,
+  .file-holder .file-content.logs, .file-holder .file-content.logs ol li,
+  .dropdown-menu, .dropdown-menu-nav, .project-network .network-graph, .tint-box,
   #contributors .person .spark {
-    background: $bgcolor2;
+    background: $bgcolor;
   }
 
+
+
+  .label-branch,
+  .navbar-inverse .navbar-text,
+  .project-stats .nav > li > a:hover, .project-stats .nav > li > a:focus,
+  .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+    color: $color4;
+  }
+
+  .nav-links li a,
+  .nav-links li.active a,
+  .form-control::-moz-placeholder, .search form::-moz-placeholder {
+    color: $color3;
+  }
+
+  .navbar .navbar-brand .status,
+  .navbar-default .navbar-nav > li > a,
+  .file-holder .file-content.logs ol li,
+  .file-holder .file-title a:not(.btn),
+  .file-holder .file-content.logs ol li p,
+  .nav-links li a:hover .badge, .nav-links li a:active .badge, .nav-links li a:focus .badge,
+  .pika-single.gitlab-theme .pika-label,
+  .select2-default,
+  .cgray, .commit.inline-commit .committed_ago, .generic_commit_status.inline-commit .committed_ago,
+  .event-item .event-title, .event-item a, .event-item,
   .search .search-input-wrap .search-icon, .search .search-input-wrap .clear-icon,
   .search-icon, .search-holder .search-icon, .group-row .stats,
   .dropdown-toggle .fa, .dropdown-menu-toggle .fa,

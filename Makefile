@@ -7,7 +7,8 @@ MIN_CSS=${SCHWARZ}.css.min
 
 build:
 	sass ${INPUT_SASS} ${OUTPUT_CSS}
-	minify -o ${MIN_CSS} ${OUTPUT_CSS}
+	#minify -o ${MIN_CSS} ${OUTPUT_CSS}
+	cat ${OUTPUT_CSS} | minify --css > ${MIN_CSS}
 
 clean:
 	-@rm -f ${OUTPUT_CSS}
