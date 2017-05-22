@@ -349,11 +349,27 @@ $bluecolor: #2c44C3;
     background: $bgcolor;
   }
 
+
+  .login-page .new-session-tabs,
+  .login-page .login-box, .login-page .omniauth-container {
+      box-shadow: 0 0 0 1px $bgcolor4;
+  }
+
   .file-holder .file-content.logs ol li:hover {
     color: $color3;
     background: $bgcolor;
     background-color: $bgcolor;
     border-color: $bgcolor4;
+  }
+
+  .login-page .new-session-tabs li.active a {
+    color: $color3;
+    background: $bgcolor3;
+    background-color: $bgcolor3;
+  }
+
+  .devise-layout-html body .footer-container, .devise-layout-html body hr.footer-fixed {
+      background: $bgcolor;
   }
 
   legend {
@@ -399,6 +415,7 @@ $bluecolor: #2c44C3;
     border-top: 1px solid $bgcolor4;
   }
 
+  header.navbar-empty,
   .project-home-panel, .group-home-panel,
   .projects-list > li,
   .event-item,
@@ -441,6 +458,11 @@ $bluecolor: #2c44C3;
     background: $bgcolor3;
   }
 
+  body.navless {
+      background-color: $bgcolor !important;
+  }
+
+  header.navbar-empty,
   .table-striped > tbody > tr:nth-of-type(2n+1),
   .navbar-default .navbar-collapse, .navbar-default .navbar-form,
   table.table tr th, .file-holder table tr th, .wiki table tr th,
